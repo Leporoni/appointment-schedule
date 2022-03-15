@@ -6,13 +6,14 @@ import javax.persistence.*;
 
 @Entity
 @Data
-public class AgeGroup {
+public class ExamIncidence {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(nullable = false, updatable = false)
     private Long id;
-    private Integer group_i;
-    private Integer group_n;
-    private String description;
+    private Integer region_id;
+    private Integer month;
+    private Long group_id;
+    private Integer amount_exams;
 }
